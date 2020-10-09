@@ -8,12 +8,15 @@ coverage:
       dbadmin:
         flags:
           - dbadmin
+          - pkg
       envoyauth:
         flags:
           - envoyauth
+          - pkg
       envoycp:
         flags:
-          - emvoycp
+          - envoycp
+          - pkg
 
 flags:
   dbadmin:
@@ -25,3 +28,6 @@ flags:
   envoycp:
     paths:
       - cmd/envoycp/
+  pkg:
+    paths:
+      - pkg/
